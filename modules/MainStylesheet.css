@@ -1,0 +1,114 @@
+.btn{
+    background-color: burlywood;
+    color: beige;
+    border-radius: 5%;
+    padding: 1em;
+    font-family: Verdana;
+    cursor:pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-image: linear-gradient(white,gray);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+
+#navbar{
+    width: 100%;
+    position: fixed;
+    margin-top: 0.1em;
+    display: flex;
+}
+
+#navbar .btn{
+    display:inline-block;
+    font-size: 26px;
+    font-weight: 700;
+    border-color: rgb(202, 233, 29);
+    border-style: solid;
+    border-width: 0.1em;
+    line-height: 0.1em;
+}
+
+#navbar .left-side{
+    margin-left: 1em;
+}
+
+#navbar .central-block{
+    display: inline-block;
+    margin-left: auto;
+}
+
+#navbar .right-side{
+    float: right;
+    margin-right: 1em;
+    margin-left: auto;   
+}
+
+
+#wrapper-signupforms{
+    width: 60%;
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signupforms-title{
+    font-size: 44px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+}
+
+.signupforms-border{
+    border-style: solid;
+    border-color: black;
+    border-width: 0.2em;
+    background-color: white;
+    border-radius: 2%;
+}
+
+.signupforms{
+    padding: 2em 0;
+}
+
+#wrapper-signupforms form{
+    width: max-content;
+    margin-right: auto;
+    margin-left:auto;
+    
+}
+
+#wrapper-signupforms form label{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#wrapper-signupforms form input{
+    width: 31em;
+    border-width: 2px;
+    border-radius: 5%;
+    margin: 1em 0;
+    height: 1.5em;
+}
+
+.signupforms-btn{
+    display: block;
+    padding: 0.5em;
+    background-color: black;
+    border-color: white;
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5%;
+    margin-top: 1em;
+    margin-left:auto;
+    margin-right: auto;
+}

@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Register</title>
+<script
+src="https://code.jquery.com/jquery-3.5.1.js"
+integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+crossorigin="anonymous">
+</script>
+<link href="../MainStylesheet.css" media="all" rel="Stylesheet" type="text/css" />
+</head>
+<body>
+    <!--Navigation bar-->
+    <div id ="navbar">
+        <div class="left-side">
+            <a class="btn" href="../Marketplace/main.php">Games</a>
+        </div>
+        <div class="right-side">
+            <a class="btn" href="signin">Sign in</a>
+            <a class="btn" href="../index.php">Homepage</a>
+        </div>
+    </div>
+    
+    <!--Form for signing up-->
+    <div id="wrapper-signupforms">
+        <div class="signupforms signupforms-border">
+        <h1 class="signupforms-title">Register</h1>
+        <form action="process_signup.php" method="POST">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" required><br>
+            <label for="eaddress">Email Address:</label><br>
+            <input type="text" id="eaddress" name="eaddress" required><br>
+            <label for="pword">Password:</label><br>
+            <input type="text" id="pword" name="pword" required><br>
+            <label for="confirmpword">Confirm Password:</label><br>
+            <input type="text" id="confirmpword" name="confirmpword" required><br>
+            <label for="pnumber">Phone Number:</label><br>
+            <input type="text" id="pnumber" name="pnumber" required><br>
+            <button type="submit" class="signupforms-btn">Create Account</button>
+        </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="account_validation.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Marketplace Home</title>
+<link href="../MainStylesheet.css" media="all" rel="Stylesheet" type="text/css" />
+</head>
+<body>
+    <!--Navigation bar-->
+    <div id ="navbar">
+        <div class="left-side">
+            <a class="btn" href="../Marketplace/main.php">Games</a>
+        </div>
+        <div class="right-side">
+            <a class="btn" href="signin">Sign in</a>
+            <a class="btn" href="../index.html">Homepage</a>
+        </div>
+    </div>
+
+    <!-- Login Form-->
+    <div id="wrapper-signupforms">
+        <div class="signupforms signupforms-border">
+            <h1 class="signupforms-title">Sign in</h1>
+            <form action="verify_credentials.php" method="POST">
+            <label for="eaddress">Email Address:</label><br>
+            <input type="text" id="eaddress" name="eaddress" required><br>
+            <label for="pword">Password:</label><br>
+            <input type="text" id="pword" name="pword" required><br>
+            <button type="submit" class="signupforms-btn">Login</button>
+            </form>
+        </div>
+    </div>
+    </body>
+</html>
