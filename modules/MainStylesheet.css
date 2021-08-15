@@ -112,3 +112,53 @@ body{
     margin-left:auto;
     margin-right: auto;
 }
+
+#catalog-wrapper{
+    display: inline-block;
+    padding-top: 100px;
+    width: 100%;
+}
+
+#catalog{
+    display: flex;
+    flex-flow: wrap;
+    padding-left: 3em;
+}
+
+#catalog .title{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 40px;
+    padding-left: 3em;
+    width: 100%;
+}
+
+#catalog .left-side{
+    flex: 20%;
+}
+
+#catalog .right-side{
+    flex: 80%;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.product-card{
+    margin: 20px;
+    border-style: inset;
+    border-radius: 2%;
+    border-color: orange;
+    border-width: 2px; 
+    text-align: center;
+}
+
+.product-card p{
+    border-radius: 2px;
+    font-size: 18px;
+    font-family: fantasy;
+    border-style: solid;
+    border-color: blueviolet;
+    padding-bottom: 4px;
+    padding-top: 4px;   
+}

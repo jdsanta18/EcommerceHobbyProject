@@ -1,5 +1,7 @@
 <?php 
 session_start();
+
+include '../../includes/dbConfig.php';
 ?>
 
 <!DOCTYPE html>
@@ -33,6 +35,30 @@ session_start();
       </div>
     </div>
     
+    <!--     -->
+    <div id = "catalog-wrapper">
+      <div id = "catalog">
+        <p class ="title">Games:</p>
+        <div class="left-side">
+          <p>Filters:</p>
+        </div>
+        <div class="right-side">
+          <?php
+            $result = mysqli_query($db, "SELECT * FROM products");
+            while($row = mysqli_fetch_assoc($result)){
+              echo '<div class="product-card">';
+              echo '<img src="' . $row[imgpath]  . '" width=200px height=200px alt="Couldnt Load img">';
+              echo '<p>' . $row[name] . '</p>';
+              echo '<p>' . $row[platform] . '</p>';
+              echo '<p>Price: ' . $row[price] . '£</p>';
+              echo '</div>';
+            }
+          ?>
+        </div>
+      </div>
+    </div>
+
+
     <script type="text/javascript">
     //Swaps the Homepage buttons depending on logged in state
       $(document).ready(function(){ 
