@@ -121,7 +121,6 @@ body{
 
 #catalog{
     display: flex;
-    flex-flow: wrap;
     padding-left: 3em;
 }
 
@@ -130,18 +129,22 @@ body{
     font-style: italic;
     font-weight: 500;
     font-size: 40px;
-    padding-left: 3em;
+    margin-left: 5%;
     width: 100%;
 }
 
 #catalog .left-side{
-    flex: 20%;
+    flex: 15%;
 }
 
 #catalog .right-side{
-    flex: 80%;
+    flex: 85%;
     display: flex;
     flex-flow: wrap;
+    border-left-color: black;
+    border-left-width: 1px;
+    border-left-style: ridge;
+    height: 800px;
 }
 
 .product-card{
