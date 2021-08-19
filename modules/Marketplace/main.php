@@ -1,5 +1,7 @@
 <?php 
   session_start();
+
+  include 'catalog_filtering.php';
 ?>
 
 <!DOCTYPE html>
@@ -38,38 +40,36 @@
       <div id = "catalog">   
         <div class="left-side">
           <h1>Filters:</h1>
-          <label for="price">Price below:</label>
-          <select name="price" id="price-select">
-            <option value="default">Any price</option>
-            <option value="9.99">9.99£</option>
-            <option value="19.99">19.99£</option>
-            <option value="29.99">29.99£</option>
-            <option value="39.99">39.99£</option>
-            <option value="49.99">49.99£</option>
-          </select>
-          <br>
-          <br>
-          <label for="platform">Platform:</label>
-          <select name="platform" id="platform-select">
-            <option value="default">Any</option>
-            <option value="Nintendo Switch">Nintendo Switch</option>
-            <option value="Playstation 4">Playstation 4</option>
-            <option value="PC">PC</option>
-            <option value="Xbox One">Xbox One</option>
-          </select>
+          <form action="" method="GET" target="_self">
+            <label for="price">Price below:</label>
+            <select name="price" id="price-select">
+              <option value="default">Any price</option>
+              <option value="9.99">9.99£</option>
+              <option value="19.99">19.99£</option>
+              <option value="29.99">29.99£</option>
+              <option value="39.99">39.99£</option>
+              <option value="49.99">49.99£</option>
+              <option value="59.99">59.99£</option>
+            </select>
+            <br>
+            <br>
+            <label for="platform">Platform:</label>
+            <select name="platform" id="platform-select">
+              <option value="default">Any</option>
+              <option value="Nintendo Switch">Nintendo Switch</option>
+              <option value="Playstation 4">Playstation 4</option>
+              <option value="PC">PC</option>
+              <option value="Xbox One">Xbox One</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+          </form>
         </div>
         <div class="right-side">
           <p class ="title">Results:</p>
           <?php
-            /*$totalresults = mysqli_query($db, "SELECT * FROM products");
-            while($row = mysqli_fetch_assoc($totalresults)){
-              echo '<div class="product-card">';
-              echo '<img src="' . $row[imgpath]  . '" width=200px height=200px alt="Couldnt Load img">';
-              echo '<p>' . $row[name] . '</p>';
-              echo '<p>' . $row[platform] . '</p>';
-              echo '<p>Price: ' . $row[price] . '£</p>';
-              echo '</div>';
-            }*/
+            displayCatalog($filterquery);
           ?>
         </div>
       </div>
